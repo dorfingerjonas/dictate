@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {SpeechRecognitionService} from '../speech-recognition.service';
 
 @Component({
   selector: 'app-button-bar',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonBarComponent implements OnInit {
 
-  constructor() { }
+  @Input() content = '';
+  @Input() speechRecoService: SpeechRecognitionService;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+  }
+
+  startReco(): void {
+    if (!this.speechRecoService.recoStarted) {
+      this.speechRecoService.start();
+    }
   }
 
 }
