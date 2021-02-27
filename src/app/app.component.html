@@ -2,4 +2,4 @@
 
 <app-output [content]="content"></app-output>
 
-<app-button-bar [content]="content" [speechRecoService]="speechReco"></app-button-bar>
+<app-button-bar [content]="content" [speechRecoService]="speechReco" (isContinued)="isContinuedHandler($event)"></app-button-bar>
