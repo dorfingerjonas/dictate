@@ -10,7 +10,6 @@ export class SpeechRecognitionService {
   public recoStarted = false;
   public text = '';
   public interimResult = new EventEmitter();
-  public speechEnded = new EventEmitter();
   private recognition = new webkitSpeechRecognition();
 
   constructor() {
@@ -23,6 +22,8 @@ export class SpeechRecognitionService {
     // set reco lang
     this.recognition.lang = 'de-DE';
 
+    this.recognition.continuous = true;
+
     // eventlistener for reco results
     this.recognition.addEventListener('result', e => {
       this.text = Array.from(e.results)
@@ -31,14 +32,6 @@ export class SpeechRecognitionService {
         .join('');
 
       this.interimResult.emit(this.text);
-    });
-
-    this.recognition.addEventListener('end', () => {
-      // call local function stop() to stop speech reco
-      this.stop();
-
-      // emit speech Ended event
-      this.speechEnded.emit();
     });
   }
 
