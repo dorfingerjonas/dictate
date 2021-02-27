@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {SpeechRecognitionService} from './speech-recognition.service';
-import {ConsoleLogger} from '@angular/compiler-cli/ngcc';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +9,8 @@ import {ConsoleLogger} from '@angular/compiler-cli/ngcc';
 export class AppComponent implements OnInit {
   title = 'dictate';
   content = '';
+  isContinued = false;
+  oldValue = '';
 
   constructor(public speechReco: SpeechRecognitionService) {
   }
@@ -18,11 +19,19 @@ export class AppComponent implements OnInit {
     this.speechReco.init();
 
     this.speechReco.interimResult.subscribe(result => {
-      this.content = result;
+      if (this.isContinued) {
+        this.content = this.oldValue + result;
+      } else {
+        this.content = result;
+      }
     });
+  }
 
-    this.speechReco.speechEnded.subscribe(() => {
+  isContinuedHandler(event: boolean): void {
+    this.isContinued = event;
 
-    });
+    if (event) {
+      this.oldValue = this.content + ' ';
+    }
   }
 }
