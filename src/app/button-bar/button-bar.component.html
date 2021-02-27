@@ -1,11 +1,9 @@
-<button class="green" (click)="startReco()">Start Speech Recognition</button>
+<button class="green" (click)="start()" [disabled]="this.recoOnceStarted">Start Speech Recognition</button>
 
-<button class="green">Continue Speech Recognition</button>
+<button class="green" [disabled]="!speechRecoService.recoStarted && !recoOnceStarted" (click)="continue()">Continue Speech Recognition</button>
 
-<button class="green">Pause Speech Recognition</button>
+<button class="red" [disabled]="!speechRecoService.recoStarted" (click)="stop()">Stop Speech Recognition</button>
 
-<button class="red">Stop Speech Recognition</button>
-
-<button class="green">Reset</button>
+<button class="green" (click)="reset()">Reset</button>
 
 <a class="green" [href]="'mailto:?body=' + content">Open Mail Program</a>
