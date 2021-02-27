@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-output',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./output.component.scss']
 })
 export class OutputComponent implements OnInit {
+
+  @Input() content = '';
 
   constructor() { }
 
