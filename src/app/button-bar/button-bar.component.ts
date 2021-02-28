@@ -11,6 +11,7 @@ export class ButtonBarComponent implements OnInit {
   @Input() content = '';
   @Input() speechRecoService: SpeechRecognitionService;
   @Output() isContinued = new EventEmitter<boolean>();
+  @Output() resetHandler = new EventEmitter();
   recoOnceStarted = false;
 
   constructor() {
@@ -31,9 +32,9 @@ export class ButtonBarComponent implements OnInit {
   }
 
   reset(): void {
-    this.content = '';
     this.recoOnceStarted = false;
     this.speechRecoService.stop();
+    this.resetHandler.emit();
     this.isContinued.emit(false);
   }
 

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit} from '@angular/core';
 import {SpeechRecognitionService} from './speech-recognition.service';
 
 @Component({
@@ -33,5 +33,9 @@ export class AppComponent implements OnInit {
     if (event) {
       this.oldValue = this.content + ' ';
     }
+  }
+
+  reset(): void {
+    this.content = '';
   }
 }
