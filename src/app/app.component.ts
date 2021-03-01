@@ -19,6 +19,8 @@ export class AppComponent implements OnInit {
     this.speechReco.init();
 
     this.speechReco.interimResult.subscribe(result => {
+      result = this.formatText(result);
+
       if (this.isContinued) {
         this.content = this.oldValue + result;
       } else {
@@ -37,5 +39,20 @@ export class AppComponent implements OnInit {
 
   reset(): void {
     this.content = '';
+  }
+
+  formatText(text): string {
+    const placeholders = [
+      {regEx: 'Absatz', content: '\n'},
+      {regEx: 'absatz', content: '\n'}
+    ];
+
+    for (const placeholder of placeholders) {
+      while (text.includes(placeholder.regEx)) {
+        text = text.replace(placeholder.regEx, placeholder.content);
+      }
+    }
+
+    return text;
   }
 }
