@@ -37,7 +37,7 @@ export class SpeechRecognitionService {
 
   // start speech reco
   start(): void {
-    console.log('%ccalled start reco function', 'color: red; font-weight: bold;');
+    // console.log('%ccalled start reco function', 'color: red; font-weight: bold;');
 
     if (!this.recoStarted) {
       this.recognition.start();
