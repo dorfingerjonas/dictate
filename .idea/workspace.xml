@@ -5,52 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74811c72-7915-4f0f-9cb7-fa3c45c9e633" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/button-bar/button-bar.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/button-bar/button-bar.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/button-bar/button-bar.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/button-bar/button-bar.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/header/header.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/header/header.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/header/header.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/header/header.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/output/output.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/output/output.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/output/output.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/output/output.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/speech-recognition.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/speech-recognition.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Roboto-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3rdpartylicenses.txt" beforeDir="false" afterPath="$PROJECT_DIR$/3rdpartylicenses.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.1e2249eb594a7903fc6f.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +17,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
