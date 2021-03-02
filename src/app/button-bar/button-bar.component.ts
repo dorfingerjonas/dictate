@@ -42,4 +42,8 @@ export class ButtonBarComponent implements OnInit {
     this.isContinued.emit(true);
     this.speechRecoService.start();
   }
+
+  encode(text): string {
+    return escape(text);
+  }
 }
