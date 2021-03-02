@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {SpeechRecognitionService} from './speech-recognition.service';
 
 @Component({
