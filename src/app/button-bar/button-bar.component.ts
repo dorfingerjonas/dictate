@@ -42,4 +42,18 @@ export class ButtonBarComponent implements OnInit {
     this.isContinued.emit(true);
     this.speechRecoService.start();
   }
+
+  encode(text): string {
+    const placeholders = [
+      {regEx: '\n', content: '%0D%0A'}
+    ];
+
+    for (const placeholder of placeholders) {
+      while (text.includes(placeholder.regEx)) {
+        text = text.replace(placeholder.regEx, placeholder.content);
+      }
+    }
+
+    return text;
+  }
 }
