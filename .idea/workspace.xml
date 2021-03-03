@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74811c72-7915-4f0f-9cb7-fa3c45c9e633" name="Default Changelist" comment="" />
+    <list default="true" id="74811c72-7915-4f0f-9cb7-fa3c45c9e633" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +52,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jonas\Documents\Projects\dictate\src\assets\fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonas\Documents\Projects\dictate" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -285,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614801299942</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="build - 2021-03-03 20:56:47">
+      <created>1614801386385</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1614801386385</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +307,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="generate and implement speech-recognition service" />
     <MESSAGE value="add font roboto regular" />
     <MESSAGE value="add global style" />
     <MESSAGE value="generate header component" />
@@ -320,6 +331,7 @@
     <MESSAGE value="remove content encoding" />
     <MESSAGE value="add encoding for line breaks for html emails" />
     <MESSAGE value="build - 2021-03-03 20:54:33" />
-    <option name="LAST_COMMIT_MESSAGE" value="build - 2021-03-03 20:54:33" />
+    <MESSAGE value="build - 2021-03-03 20:56:47" />
+    <option name="LAST_COMMIT_MESSAGE" value="build - 2021-03-03 20:56:47" />
   </component>
 </project>
