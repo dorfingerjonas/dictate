@@ -1,0 +1,5 @@
+<app-header></app-header>
+
+<app-output [content]="content"></app-output>
+
+<app-button-bar [content]="content" [speechRecoService]="speechReco" (isContinued)="isContinuedHandler($event)" (resetHandler)="reset()"></app-button-bar>
