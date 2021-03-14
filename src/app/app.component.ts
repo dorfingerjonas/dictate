@@ -38,4 +38,8 @@ export class AppComponent implements OnInit {
   reset(): void {
     this.content = '';
   }
+
+  isBrowserChrome(): boolean {
+    return navigator.userAgent.indexOf('Chrome') !== -1;
+  }
 }
