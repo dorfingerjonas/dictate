@@ -10,13 +10,15 @@ export class SpeechRecognitionService {
   public recoStarted = false;
   public text = '';
   public interimResult = new EventEmitter();
-  private recognition = new webkitSpeechRecognition();
+  private recognition;
 
   constructor() {
   }
 
   // init speech reco
   init(): void {
+    // initialize recognition
+    this.recognition = new webkitSpeechRecognition();
     // enable live results
     this.recognition.interimResults = true;
     // set reco lang
@@ -37,8 +39,6 @@ export class SpeechRecognitionService {
 
   // start speech reco
   start(): void {
-    // console.log('%ccalled start reco function', 'color: red; font-weight: bold;');
-
     if (!this.recoStarted) {
       this.recognition.start();
       this.recoStarted = true;
