@@ -1,5 +1,8 @@
 <app-header></app-header>
 
-<app-output [content]="content"></app-output>
+<app-output *ngIf="isBrowserChrome()" [content]="content"></app-output>
 
-<app-button-bar [content]="content" [speechRecoService]="speechReco" (isContinued)="isContinuedHandler($event)" (resetHandler)="reset()"></app-button-bar>
+<app-button-bar *ngIf="isBrowserChrome()" [content]="content" [speechRecoService]="speechReco"
+                (isContinued)="isContinuedHandler($event)" (resetHandler)="reset()"></app-button-bar>
+
+<h1 *ngIf="!isBrowserChrome()">Please use Google Chrome to use Dictate</h1>
