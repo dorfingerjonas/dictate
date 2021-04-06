@@ -6,4 +6,4 @@
 
 <button class="green" (click)="reset()">Reset</button>
 
-<a class="green" [href]="'mailto:?body=' + encode(content)">Open Mail Program</a>
+<a class="green" [href]="'mailto:?body=' + encode(content | format)">Open Mail Program</a>
